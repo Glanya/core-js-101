@@ -87,8 +87,8 @@ function getPolynom(a, b, c) {
  *   memoizer() => the same random number  (next run, returns the previous cached result)
  */
 function memoize(func) {
-  const res = func();
-  return () => res;
+  const result = func();
+  return () => result;
 }
 
 
